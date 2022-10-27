@@ -97,50 +97,52 @@ class HomePageState extends State<HomePage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Row(
-                        children: [
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.grey.shade600.withOpacity(0.5),
-                            ),
-                            child: Text(
-                              "${weatherWatch.weatherInfo['weather']}",
-                              style: const TextStyle(
-                                color: Colors.white,
+                      child: SingleChildScrollView(
+                        child: Row(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: Colors.grey.shade600.withOpacity(0.5),
+                              ),
+                              child: Text(
+                                "${weatherWatch.weatherInfo['weather']}",
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
-                          ),
-                          const Gap(10),
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.grey.shade600.withOpacity(0.5),
-                            ),
-                            child: Text(
-                              "${weatherWatch.weatherInfo['weather_description']}",
-                              style: const TextStyle(
-                                color: Colors.white,
+                            const Gap(10),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: Colors.grey.shade600.withOpacity(0.5),
+                              ),
+                              child: Text(
+                                "${weatherWatch.weatherInfo['weather_description']}",
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
-                          ),
-                          const Gap(10),
-                          Container(
-                            padding: const EdgeInsets.all(10),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20),
-                              color: Colors.grey.shade600.withOpacity(0.5),
-                            ),
-                            child: Text(
-                              "${weatherWatch.weatherInfo['state']}",
-                              style: const TextStyle(
-                                color: Colors.white,
+                            const Gap(10),
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(20),
+                                color: Colors.grey.shade600.withOpacity(0.5),
+                              ),
+                              child: Text(
+                                "${weatherWatch.weatherInfo['state']}",
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ],
